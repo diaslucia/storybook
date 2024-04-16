@@ -21,4 +21,4 @@ jobs:
         with:
           #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/angular/en/deploy/ to obtain it
           projectToken: chpt_86bec6ec523ae2e
-          token: ${{ secrets.STORYBOOK_SECRET }}
+          token: ${{ secrets.GITHUB_TOKEN  }}
