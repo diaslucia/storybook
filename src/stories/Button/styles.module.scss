@@ -1,0 +1,91 @@
+@import "@/styles/theme.scss";
+
+// Strokes for Icons
+
+.svgGrey {
+  path[stroke="white"] {
+    stroke: $grey;
+  }
+  path[fill="white"] {
+    fill: $grey;
+  }
+}
+
+.svgWhite {
+  path[stroke="white"] {
+    stroke: $white;
+  }
+  path[fill="white"] {
+    fill: $white;
+  }
+}
+
+.svgOrange {
+  path[stroke="white"] {
+    stroke: $orange;
+  }
+  path[fill="white"] {
+    fill: $orange;
+  }
+}
+
+//Buttons
+
+.btn {
+  @include flex(row, center, center, 8px);
+  @include fontSize-fontWeight(16px, 400);
+  height: fit-content;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  background: $darkOrange;
+  color: $white;
+  cursor: pointer;
+  transition: background 200ms ease-in;
+  &:hover {
+    background: $orange;
+  }
+  &:disabled {
+    background: $white;
+    border: 1px solid $lightGrey;
+    color: $lightGrey;
+    cursor: default;
+    path[stroke="white"] {
+      stroke: $lightGrey;
+    }
+    path[fill="white"] {
+      fill: $lightGrey;
+    }
+  }
+}
+
+.btn_secondary {
+  background: transparent;
+  color: $grey;
+  border: 1px solid $orange;
+  &:hover {
+    color: white;
+    path[stroke="white"] {
+      stroke: $white;
+    }
+    path[fill="white"] {
+      fill: $white;
+    }
+  }
+}
+
+.btn_grey {
+  background: $shadowGrey;
+  color: $grey;
+  &:hover {
+    color: $white;
+    background: $lightGrey;
+  }
+}
+
+@media (min-width: $queryLg) {
+  .btn {
+    @include fontSize-fontWeight(15px, 500);
+    padding: 10px;
+  }
+}
