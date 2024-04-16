@@ -68,12 +68,3 @@ export const IconButton: Story = {
     svgColor: "svgWhite",
   },
 };
-
-export const IconButtonLeft: Story = {
-  args: {
-    title: "Botón",
-    isDisabled: false,
-    iconLeft: "link",
-    svgColor: "svgWhite",
-  },
-};
