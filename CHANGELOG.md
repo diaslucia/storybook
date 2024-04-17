@@ -2,6 +2,20 @@
 
 #### ⚠️ Pushed to `main`
 
+- commit files ([@diaslucia](https://github.com/diaslucia))
+- ADD changelog ([@diaslucia](https://github.com/diaslucia))
+- add rollup ([@diaslucia](https://github.com/diaslucia))
+
+#### Authors: 1
+
+- Lucia Dias ([@diaslucia](https://github.com/diaslucia))
+
+---
+
+# v1.0.1 (Wed Apr 17 2024)
+
+#### ⚠️ Pushed to `main`
+
 - ADD changelog ([@diaslucia](https://github.com/diaslucia))
 - add rollup ([@diaslucia](https://github.com/diaslucia))
 
