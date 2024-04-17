@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
-import FilterIcon from "./Icons/FilterIcon";
-import link from "./Icons/link-icon.svg";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
