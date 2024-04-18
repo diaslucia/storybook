@@ -66,26 +66,3 @@ export const IconButton: Story = {
     svgColor: "svgWhite",
   },
 };
-
-export const IconButtonBoth: Story = {
-  args: {
-    title: "Botón",
-    isDisabled: false,
-    iconRight: "link",
-    svgColor: "svgWhite",
-  },
-};
-
-/* export const Sizes: Story = {
-  args: {
-    title: "Botón",
-    isDisabled: false,
-    svgColor: "svgWhite",
-  },
-  render: (args) => (
-    <div>
-      <Button {...args}  iconRight: "link" />
-      <Button {...args} iconLeft: "link" />
-    </div>
-  ),
-}; */
