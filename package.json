@@ -1,7 +1,6 @@
 {
   "name": "@luciadias/storybook-example",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,12 +12,17 @@
     "release": "auto shipit"
   },
   "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "@storybook/addon-storysource": "^8.0.8",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18",
     "released": "^1.1.0",
     "rollup": "^4.14.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "sass": "^1.75.0",
     "yarn": "^1.22.22"
   },
