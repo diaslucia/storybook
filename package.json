@@ -9,7 +9,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_86bec6ec523ae2e",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "build-lib": "rollup -c"
   },
   "dependencies": {
     "@rollup/plugin-babel": "^6.0.4",
