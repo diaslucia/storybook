@@ -1,8 +1,12 @@
+import { babel } from "@rollup/plugin-babel";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import { babel } from "@rollup/plugin-babel";
+import scss from "rollup-plugin-scss";
+import typescript from "@rollup/plugin-typescript";
+import dts from "rollup-plugin-dts";
+import sass from "rollup-plugin-sass";
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -29,16 +33,26 @@ export default [
     ],
     plugins: [
       peerDepsExternal(),
-      resolve({
+      /* resolve({
         extensions: [".js", ".jsx"],
-      }),
+      }), */
+      resolve(),
       commonjs(),
       terser(),
-      babel({
-        extensions: [".js", ".jsx"],
+      scss(),
+      sass(),
+      typescript(),
+      /*  babel({
+        extensions: [".js", ".jsx", "ts", "tsx"],
         exclude: "node_modules/**",
-      }),
+      }), */
     ],
     external: ["react", "react-dom", "@emotion/react", "@emotion/styled"],
+  },
+  {
+    input: "dist/esm/types/index.d.ts",
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
+    plugins: [dts()],
+    external: [/\.scss$/],
   },
 ];

@@ -7,7 +7,6 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_86bec6ec523ae2e",
     "release": "auto shipit",
     "build-lib": "rollup -c"
@@ -17,13 +16,16 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-storysource": "^8.0.8",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18",
     "released": "^1.1.0",
     "rollup": "^4.14.3",
+    "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.75.0",
     "yarn": "^1.22.22"
   },
@@ -45,13 +47,17 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
     "eslint-plugin-storybook": "^0.8.0",
+    "rollup-plugin-sass": "^1.12.22",
     "storybook": "^8.0.8",
     "typescript": "^5"
   },
   "description": "The Storybook design system tutorial is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diaslucia/storybook.git"

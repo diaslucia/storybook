@@ -1,0 +1,85 @@
+.svgGrey path[stroke=white] {
+  stroke: #7f7f7f;
+}
+.svgGrey path[fill=white] {
+  fill: #7f7f7f;
+}
+
+.svgWhite path[stroke=white] {
+  stroke: #fff;
+}
+.svgWhite path[fill=white] {
+  fill: #fff;
+}
+
+.svgOrange path[stroke=white] {
+  stroke: #ff5722;
+}
+.svgOrange path[fill=white] {
+  fill: #ff5722;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  height: fit-content;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  background: #ff3d02;
+  color: #fff;
+  cursor: pointer;
+  transition: background 200ms ease-in;
+}
+.btn:hover {
+  background: #ff5722;
+}
+.btn:disabled {
+  background: #fff;
+  border: 1px solid #bebebe;
+  color: #bebebe;
+  cursor: default;
+}
+.btn:disabled path[stroke=white] {
+  stroke: #bebebe;
+}
+.btn:disabled path[fill=white] {
+  fill: #bebebe;
+}
+
+.btn_secondary {
+  background: transparent;
+  color: #7f7f7f;
+  border: 1px solid #ff5722;
+}
+.btn_secondary:hover {
+  color: white;
+}
+.btn_secondary:hover path[stroke=white] {
+  stroke: #fff;
+}
+.btn_secondary:hover path[fill=white] {
+  fill: #fff;
+}
+
+.btn_grey {
+  background: #f8f8f8;
+  color: #7f7f7f;
+}
+.btn_grey:hover {
+  color: #fff;
+  background: #bebebe;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
