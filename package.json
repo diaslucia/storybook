@@ -8,6 +8,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "chromatic": "npx chromatic --project-token=chpt_86bec6ec523ae2e",
+    "build-storybook": "storybook build",
     "release": "auto shipit",
     "build-lib": "rollup -c"
   },
