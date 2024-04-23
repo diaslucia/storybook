@@ -1,1 +1,3 @@
-export * from "./stories";
+import Button from "./stories/buttons";
+
+export default Button;
