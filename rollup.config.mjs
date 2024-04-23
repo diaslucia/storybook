@@ -8,9 +8,6 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import sass from "rollup-plugin-sass";
 
-// This is required to read package.json file when
-// using Native ES modules in Node.js
-// https://rollupjs.org/command-line-interface/#importing-package-json
 import { createRequire } from "node:module";
 const requireFile = createRequire(import.meta.url);
 const packageJson = requireFile("./package.json");
@@ -50,7 +47,7 @@ export default [
     external: ["react", "react-dom", "@emotion/react", "@emotion/styled"],
   },
   {
-    input: "dist/esm/types/index.d.ts",
+    input: "dist/esm/types/src/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: [/\.scss$/],
